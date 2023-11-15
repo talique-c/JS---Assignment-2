@@ -1,0 +1,65 @@
+/* Imports fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+/*-- LAYOUT --*/
+/* Sets root font size, background color and font */
+html {
+    font-size: 10px;
+    color: white;
+    background-color: #FFC1CC;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Uses flex to get text in the center */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Aligns item in the container to the center (figcaption) */
+.container {
+    text-align: center;
+}
+
+/*-- IMAGES --*/
+/* Adds a border to the large image */
+figure > img {
+    border: 5px ridge white;
+}
+/* Uses flex to display images in rows */
+ul {
+    display: flex;
+    gap: 10px;
+}
+
+/* Removes the bullet points */
+li {
+    list-style-type: none;
+    
+}
+
+/* Adds grayscale and removes it on hover */
+/* Also adds a border to thumbnails */
+li img {
+    filter: grayscale(100);
+    border: 5px ridge white;
+}
+
+li img:hover {
+    filter: none;
+}
+
+/*-- TEXT --*/
+/* Adds some styling to the h1 */
+h1 {
+    font-size: 5rem;
+    text-decoration: underline;
+    text-shadow: 2px 2px 2px #E75480;
+}
+
+figcaption {
+    margin-top: 0.5em;
+    margin-bottom: 2em;
+    font-size: 2rem;
+}
